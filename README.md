@@ -9,7 +9,7 @@ The project demonstrates how an AI-powered support operations system can be desi
 ## Preview
 
 ### Login & Workspace Selection / Live Ticket Submission
-<img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" width="45%" alt="Login Workspace"> <img src="docs/Screenshots/Frontend/2.%20Submit%20ticket.png" width="45%" alt="Submit Ticket">
+<img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" width="45%" alt="Login Workspace"> <img src="docs/Screenshots/Frontend/2.%20Submit%20Ticket.png" width="45%" alt="Submit Ticket">
 
 ### Operations Dashboard / Human Approval Queue
 <img src="docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png" width="45%" alt="Operations Dashboard"> <img src="docs/Screenshots/Frontend/4.%20Approval%20Queue.png" width="45%" alt="Approval Queue">
