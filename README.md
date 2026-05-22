@@ -1,60 +1,194 @@
 # ClaudeOps Flow
 
-ClaudeOps Flow is an AI-powered support ticket triage and workflow automation platform. It converts unstructured support tickets into structured operational outputs, detects SLA-risk cases, recommends next actions, stores workflow history in PostgreSQL, and prepares downstream automation payloads for Zapier, Make, Gmail, Trello, Google Sheets, Slack, or generic webhooks.
+ClaudeOps Flow is a full-stack AI operations workflow platform that converts unstructured support tickets into structured triage decisions, escalation recommendations, human approval workflows, automation-ready payloads, benchmark analytics, and observability insights.
 
-## Features
+The project demonstrates how an AI-powered support operations system can be designed with production-style thinking: role-based access, deterministic routing, human approval gates, policy-based automation control, PostgreSQL logging, benchmark history, correction feedback, and monitoring dashboards.
 
-- AI ticket triage using Claude, Gemini, or Groq
-- Queue, priority, type, intent, and language prediction
-- SLA-risk and human-review detection
-- Structured field extraction
-- Draft customer response generation
-- PostgreSQL logging and audit trail
-- Approval queue before executing critical automation
-- Zapier and Make webhook integration
-- Gmail, Trello, and Google Sheets downstream-ready payloads
-- Benchmark runner for queue consistency and latency
-- Streamlit dashboard with admin and analyst roles
-- Docker support for API, dashboard, and PostgreSQL
+---
+
+## Preview
+
+### Login & Workspace Selection
+
+![Login Workspace](docs/screenshots/01-login-workspace.png)
+
+### Live Ticket Submission
+
+![Submit Ticket](docs/screenshots/02-submit-ticket-ai-result.png)
+
+### Operations Dashboard
+
+![Operations Dashboard](docs/screenshots/03-operations-dashboard.png)
+
+### Human Approval Queue
+
+![Approval Queue](docs/screenshots/04-approval-queue.png)
+
+### Integrations & Benchmark
+
+![Integrations Benchmark](docs/screenshots/05-integrations-benchmark.png)
+
+### Project Overview
+
+![Project Overview](docs/screenshots/07-project-overview.png)
+
+---
+
+## What This Project Does
+
+ClaudeOps Flow takes a support ticket and performs an end-to-end AI operations workflow:
+
+1. Accepts a support ticket from the Streamlit frontend.
+2. Sends the request to a FastAPI backend.
+3. Runs AI triage using an LLM provider.
+4. Predicts queue, priority, intent, SLA risk, summary, and recommended action.
+5. Stores request, response, latency, retry data, and metadata in PostgreSQL.
+6. Applies automation decision logic.
+7. Routes critical automation plans into a human approval queue.
+8. Applies policy-based checks before external automation.
+9. Prepares Zapier, Make, Slack, and generic webhook-ready payloads.
+10. Tracks benchmark performance, observability, feedback corrections, and policy audit history.
+
+---
+
+## Key Features
+
+### AI Ticket Triage
+
+- Predicts support queue
+- Predicts ticket priority
+- Detects likely user intent
+- Detects SLA risk
+- Generates ticket summary
+- Generates recommended action
+- Optionally generates a draft customer response
+
+### Deterministic Routing
+
+- Uses rule-based routing before LLM handling
+- Supports specialist routing profiles
+- Improves consistency and explainability
+- Reduces dependency on one generic prompt
+
+### Human Approval Queue
+
+- Critical automation plans wait for approval
+- Admin or Ops Analyst can approve/reject controlled actions
+- Approval result is stored and visible in the dashboard
+- Prevents automatic execution of sensitive workflows
+
+### Policy-Based Automation Control
+
+- Applies governance rules before outbound automation
+- Tracks allowed and blocked external actions
+- Supports least-privilege automation design
+- Records policy audit history
+
+### Integrations
+
+- Zapier-ready webhook payloads
+- Make-ready webhook payloads
+- Slack/webhook-style contract design
+- Stable outbound automation contract
+
+### Benchmarking
+
+- Runs benchmark samples
+- Tracks queue consistency
+- Tracks priority distribution
+- Tracks escalation count
+- Tracks latency distribution
+- Stores benchmark history in PostgreSQL
+
+### Observability
+
+- Tracks latency
+- Tracks errors
+- Tracks retry counts
+- Tracks token usage
+- Tracks estimated cost
+- Tracks low-confidence outputs
+- Tracks correction feedback
+- Tracks policy audit records
+- Shows raw JSON traces for debugging
+
+### Role-Based Frontend
+
+Two demo workspaces are supported:
+
+| Role | Access |
+|---|---|
+| Admin | Full access to submission, dashboard, approvals, integrations, benchmark, observability, and project overview |
+| Ops Analyst | Access to ticket submission, operations dashboard, approval queue, and project overview |
+
+---
 
 ## Tech Stack
 
+### Backend
+
 - Python
 - FastAPI
-- Streamlit
-- PostgreSQL
 - SQLAlchemy
+- PostgreSQL
 - Pydantic
-- Anthropic Claude API
-- Gemini API
-- Groq API
-- Zapier Webhooks
-- Make Webhooks
-- Docker
+- LLM API integration
+- Policy engine
+- REST APIs
 
-## Project Architecture
+### Frontend
+
+- Streamlit
+- Custom HTML/CSS
+- Altair charts
+- Pandas dataframes
+- Role-based UI rendering
+
+### Infrastructure
+
+- Docker
+- Docker Compose
+- PostgreSQL container
+- API container
+- Streamlit container
+
+---
+
+## Architecture
 
 ```text
-Support Ticket
-     |
-     v
-FastAPI Triage Endpoint
-     |
-     v
-LLM JSON Triage
-     |
-     v
-Validation + Normalization
-     |
-     v
-PostgreSQL Log
-     |
-     v
-Automation Decision
-     |
-     +---- If high-risk: Approval Queue
-     |
-     +---- If approved: Zapier / Make / Webhook
-     |
-     v
-Streamlit Dashboard
+User
+ │
+ ▼
+Streamlit Frontend
+ │
+ │  Submit ticket / view dashboards / approve automation
+ ▼
+FastAPI Backend
+ │
+ ├── AI triage service
+ ├── Deterministic routing
+ ├── Automation decision service
+ ├── Approval service
+ ├── Policy engine
+ ├── Benchmark service
+ └── Observability service
+ │
+ ▼
+PostgreSQL
+ │
+ ├── triage logs
+ ├── automation decisions
+ ├── approvals
+ ├── policy audit
+ ├── benchmark runs
+ ├── feedback corrections
+ └── observability traces
+ │
+ ▼
+Optional external automation
+ │
+ ├── Zapier
+ ├── Make
+ ├── Slack
+ └── Generic webhooks
