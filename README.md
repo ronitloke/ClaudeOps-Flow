@@ -8,17 +8,32 @@ The project demonstrates how an AI-powered support operations system can be desi
 
 ## Preview
 
-### Login & Workspace Selection / Live Ticket Submission
-<img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Login Workspace"> <img src="docs/Screenshots/Frontend/2.%20Submit%20Ticket.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Submit Ticket">
+<details>
+  <summary>🔍 <strong>1. Login & Workspace Selection / Live Ticket Submission</strong></summary>
+  <br>
+  <p align="center">
+    <img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" width="48%" alt="Login Workspace">
+    <img src="docs/Screenshots/Frontend/2.%20Submit%20Ticket.png" width="48%" alt="Submit Ticket">
+  </p>
+</details>
 
-### Operations Dashboard / Human Approval Queue
-<img src="docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Operations Dashboard"> <img src="docs/Screenshots/Frontend/4.%20Approval%20Queue.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Approval Queue">
+<details>
+  <summary>📊 <strong>2. Operations Dashboard / Human Approval Queue</strong></summary>
+  <br>
+  <p align="center">
+    <img src="docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png" width="48%" alt="Operations Dashboard">
+    <img src="docs/Screenshots/Frontend/4.%20Approval%20Queue.png" width="48%" alt="Approval Queue">
+  </p>
+</details>
 
-### Integrations & Benchmark / Project Overview
-<img src="docs/Screenshots/Frontend/5.%20Integrations%20%26%20Benchmark.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Integrations Benchmark"> <img src="docs/Screenshots/Frontend/7.%20Project%20Overview.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Project Overview">
-
-
-
+<details>
+  <summary>⚙️ <strong>3. Integrations & Benchmark / Project Overview</strong></summary>
+  <br>
+  <p align="center">
+    <img src="docs/Screenshots/Frontend/5.%20Integrations%20%26%20Benchmark.png" width="48%" alt="Integrations Benchmark">
+    <img src="docs/Screenshots/Frontend/7.%20Project%20Overview.png" width="48%" alt="Project Overview">
+  </p>
+</details>
 ---
 
 ## What This Project Does
