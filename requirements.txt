@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pandas
+pydantic-settings
+python-dotenv
+groq
+anthropic
+streamlit
+sqlalchemy
+psycopg[binary]
+requests
