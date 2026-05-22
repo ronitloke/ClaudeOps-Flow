@@ -8,13 +8,13 @@ The project demonstrates how an AI-powered support operations system can be desi
 
 ## Preview
 
-### Login & Workspace Selection / Live Ticket Submission
+### Login & Workspace Selection & Live Ticket Submission
 <img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" style="width: 48%; height: 300px; object-fit: contain; background: #f6f8fa;" alt="Login Workspace"> <img src="docs/Screenshots/Frontend/2.%20Submit%20Ticket.png" style="width: 48%; height: 300px; object-fit: contain; background: #f6f8fa;" alt="Submit Ticket">
 
-### Operations Dashboard / Human Approval Queue
+### Operations Dashboard & Human Approval Queue
 <img src="docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png" style="width: 48%; height: 300px; object-fit: contain; background: #f6f8fa;" alt="Operations Dashboard"> <img src="docs/Screenshots/Frontend/4.%20Approval%20Queue.png" style="width: 48%; height: 300px; object-fit: contain; background: #f6f8fa;" alt="Approval Queue">
 
-### Integrations & Benchmark / Project Overview
+### Integrations & Benchmark & Project Overview
 <img src="docs/Screenshots/Frontend/5.%20Integrations%20%26%20Benchmark.png" style="width: 48%; height: 300px; object-fit: contain; background: #f6f8fa;" alt="Integrations Benchmark"> <img src="docs/Screenshots/Frontend/7.%20Project%20Overview.png" style="width: 48%; height: 300px; object-fit: contain; background: #f6f8fa;" alt="Project Overview">
 
 
