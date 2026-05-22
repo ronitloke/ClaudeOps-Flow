@@ -9,13 +9,14 @@ The project demonstrates how an AI-powered support operations system can be desi
 ## Preview
 
 ### Login & Workspace Selection / Live Ticket Submission
-<img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" width="45%" alt="Login Workspace"> <img src="docs/Screenshots/Frontend/2.%20Submit%20Ticket.png" width="45%" alt="Submit Ticket">
+<img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Login Workspace"> <img src="docs/Screenshots/Frontend/2.%20Submit%20Ticket.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Submit Ticket">
 
 ### Operations Dashboard / Human Approval Queue
-<img src="docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png" width="45%" alt="Operations Dashboard"> <img src="docs/Screenshots/Frontend/4.%20Approval%20Queue.png" width="45%" alt="Approval Queue">
+<img src="docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Operations Dashboard"> <img src="docs/Screenshots/Frontend/4.%20Approval%20Queue.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Approval Queue">
 
 ### Integrations & Benchmark / Project Overview
-<img src="docs/Screenshots/Frontend/5.%20Integrations%20%26%20Benchmark.png" width="45%" alt="Integrations Benchmark"> <img src="docs/Screenshots/Frontend/7.%20Project%20Overview.png" width="45%" alt="Project Overview">
+<img src="docs/Screenshots/Frontend/5.%20Integrations%20%26%20Benchmark.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Integrations Benchmark"> <img src="docs/Screenshots/Frontend/7.%20Project%20Overview.png" style="width: 48%; height: 280px; object-fit: cover;" alt="Project Overview">
+
 
 
 ---
