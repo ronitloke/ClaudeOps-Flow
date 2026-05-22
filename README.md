@@ -14,7 +14,7 @@ The project demonstrates how an AI-powered support operations system can be desi
 
 ### Live Ticket Submission
 
-![Submit Ticket](docs/Screenshots/Frontend/2.%20Submit%20ticket.png)
+![Submit Ticket](docs/Screenshots/Frontend/2.%20Submit%20Ticket.png)
 
 ### Operations Dashboard
 
