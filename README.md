@@ -14,23 +14,23 @@ The project demonstrates how an AI-powered support operations system can be desi
 
 ### Live Ticket Submission
 
-![Submit Ticket](docs/screenshots/02-submit-ticket-ai-result.png)
+![Submit Ticket](docs/Screenshots/Frontend/2.%20Submit%20ticket.png)
 
 ### Operations Dashboard
 
-![Operations Dashboard](docs/screenshots/03-operations-dashboard.png)
+![Operations Dashboard](docs/Screenshots/Frontend/3.%20Operations%20Dashboard.png)
 
 ### Human Approval Queue
 
-![Approval Queue](docs/screenshots/04-approval-queue.png)
+![Approval Queue](docs/Screenshots/Frontend/4.%20Approval%20Queue.png)
 
 ### Integrations & Benchmark
 
-![Integrations Benchmark](docs/screenshots/05-integrations-benchmark.png)
+![Integrations Benchmark](docs/Screenshots/Frontend/5.%20Integrations%20%26%20Benchmark.png)
 
 ### Project Overview
 
-![Project Overview](docs/screenshots/07-project-overview.png)
+![Project Overview](docs/Screenshots/Frontend/7.%20Project%20Overview.png)
 
 ---
 
