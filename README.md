@@ -10,7 +10,7 @@ The project demonstrates how an AI-powered support operations system can be desi
 
 ### Login & Workspace Selection
 
-![Login Workspace](docs/Screenshots/Frontend/1.%20Login%20Page.png)
+<img src="docs/Screenshots/Frontend/1.%20Login%20Page.png" width="400" alt="Login Workspace">
 
 ### Live Ticket Submission
 
