@@ -224,9 +224,9 @@ The services should run at:
 | FastAPI Swagger | http://localhost:8000/docs |
 | PostgreSQL | localhost:5432 |
 
+## Run Locally Without Docker
 
-
-1. Create virtual environment
+### 1. Create virtual environment
 
 ```bash
 python -m venv .venv
@@ -247,7 +247,7 @@ source .venv/bin/activate
 ```
 
 2. Install dependencies
-3. 
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -272,17 +272,21 @@ Then open:
 http://localhost:8501
 ```
 
-Demo Login
+### Demo Login
 
 The demo login credentials are configured through .env.
 
 Default example:
 
-Role	Username	Password
-Admin	admin	admin123
-Ops Analyst	analyst	analyst123
-Main Application Pages
-Submit Ticket
+
+| Role | Username | Password |
+| :--- | :--- | :--- |
+| Admin | admin | admin123 |
+| Ops Analyst | analyst | analyst123 |
+
+## Main Application Pages
+
+### Submit Ticket
 
 Used to submit a support ticket and run the AI triage workflow.
 
