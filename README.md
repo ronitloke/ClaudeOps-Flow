@@ -179,9 +179,7 @@ Optional external automation
  ├── Slack
  └── Generic webhooks
 
----
-
----
+```
 
 ## Setup Instructions
 
