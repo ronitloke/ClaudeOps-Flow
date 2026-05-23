@@ -179,6 +179,8 @@ Optional external automation
  ├── Slack
  └── Generic webhooks
 
+---
+
 ## Setup Instructions
 
 ### 1. Clone the repository
