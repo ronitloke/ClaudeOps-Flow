@@ -302,7 +302,6 @@ Used to submit a support ticket and run the AI triage workflow.
 - Draft response
 - Structured JSON output
 
----
 
 ### Operations Dashboard
 Used to monitor stored triage logs.
@@ -321,7 +320,6 @@ Used to monitor stored triage logs.
 - Recent triage records
 - Detailed request review
 
----
 
 ### Approval Queue
 Used to review critical automation plans before external actions are executed.
@@ -337,7 +335,6 @@ Used to review critical automation plans before external actions are executed.
 - Approval reason
 - Approve/reject buttons
 
----
 
 ### Integrations & Benchmark
 Used to review automation readiness and benchmark the AI workflow.
@@ -351,7 +348,6 @@ Used to review automation readiness and benchmark the AI workflow.
 - Benchmark charts
 - Benchmark history
 
----
 
 ### Observability & Evaluation
 Used to monitor production-style AI system behavior.
@@ -366,7 +362,6 @@ Used to monitor production-style AI system behavior.
 - Policy-based tool access audit
 - Raw observability JSON
 
----
 
 ### Project Overview
 Used to explain the system clearly for GitHub, LinkedIn, and interviews.
