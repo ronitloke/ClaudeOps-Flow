@@ -1,8 +1,8 @@
 # ClaudeOps Flow Demo Flow
 
-## Demo Scenario
+## Demo Scenarios
 
-Use a critical payment issue ticket:
+1. Use a critical payment issue ticket:
 
 ```text
 Subject:
@@ -12,7 +12,7 @@ Body:
 Several customers are unable to complete checkout since this morning. Payment failures are increasing and support volume is rising. Please investigate urgently and advise on next steps.
 ```
 
-Use an API integration issue ticket:
+2. Use an API integration issue ticket:
 
 ```text
 Subject:
@@ -22,7 +22,7 @@ Body:
 Our webhook integration is failing with timeout errors and the API is returning server errors.
 ```
 
-Use a password reset issue ticket:
+3. Use a password reset issue ticket:
 
 ```text
 Subject:
@@ -32,7 +32,7 @@ Body:
 The customer cannot sign in after resetting their password and MFA code is not working.
 ```
 
-Use an order delivery issue ticket:
+4. Use an order delivery issue ticket:
 
 ```text
 Subject:
