@@ -181,6 +181,8 @@ Optional external automation
 
 ---
 
+---
+
 ## Setup Instructions
 
 ### 1. Clone the repository
