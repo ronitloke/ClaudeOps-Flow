@@ -179,11 +179,14 @@ Optional external automation
  ├── Slack
  └── Generic webhooks
 
-Setup Instructions
-1. Clone the repository
+## Setup Instructions
+
+### 1. Clone the repository
+
 git clone https://github.com/YOUR_USERNAME/ClaudeOps-Flow.git
 cd ClaudeOps-Flow
-2. Create environment file
+
+### 2. Create environment file
 cp .env.example .env
 
 On Windows PowerShell:
@@ -192,7 +195,7 @@ copy .env.example .env
 
 Update .env with your local values.
 
-Run with Docker
+### Run with Docker
 
 This is the recommended way.
 
