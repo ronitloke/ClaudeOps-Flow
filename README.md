@@ -246,19 +246,19 @@ macOS/Linux:
 source .venv/bin/activate
 ```
 
-2. Install dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Start FastAPI backend
+### 3. Start FastAPI backend
 
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
 
-4. Start Streamlit frontend
+### 4. Start Streamlit frontend
 
 Open another terminal:
 
@@ -287,98 +287,102 @@ Default example:
 ## Main Application Pages
 
 ### Submit Ticket
-
 Used to submit a support ticket and run the AI triage workflow.
 
-Shows:
+**Shows:**
+- Predicted queue
+- Priority
+- Intent
+- Confidence
+- SLA risk
+- Latency
+- Retry count
+- Escalation decision
+- Automation approval status
+- Draft response
+- Structured JSON output
 
-predicted queue
-priority
-intent
-confidence
-SLA risk
-latency
-retry count
-escalation decision
-automation approval status
-draft response
-structured JSON output
-Operations Dashboard
+---
 
+### Operations Dashboard
 Used to monitor stored triage logs.
 
-Shows:
+**Shows:**
+- Total tickets
+- Success rate
+- SLA-risk rate
+- Escalation rate
+- Average confidence
+- Average latency
+- Retry rate
+- Top queue
+- Distribution charts
+- Latency trend
+- Recent triage records
+- Detailed request review
 
-total tickets
-success rate
-SLA-risk rate
-escalation rate
-average confidence
-average latency
-retry rate
-top queue
-distribution charts
-latency trend
-recent triage records
-detailed request review
-Approval Queue
+---
 
+### Approval Queue
 Used to review critical automation plans before external actions are executed.
 
-Shows:
+**Shows:**
+- Subject
+- Summary
+- Priority
+- Queue
+- Target team
+- SLA risk
+- Human review flag
+- Approval reason
+- Approve/reject buttons
 
-subject
-summary
-priority
-queue
-target team
-SLA risk
-human review flag
-approval reason
-approve/reject buttons
-Integrations & Benchmark
+---
 
+### Integrations & Benchmark
 Used to review automation readiness and benchmark the AI workflow.
 
-Shows:
+**Shows:**
+- Zapier hook status
+- Make hook status
+- Outbound workflow contract
+- Benchmark runner
+- Benchmark summary
+- Benchmark charts
+- Benchmark history
 
-Zapier hook status
-Make hook status
-outbound workflow contract
-benchmark runner
-benchmark summary
-benchmark charts
-benchmark history
-Observability & Evaluation
+---
 
+### Observability & Evaluation
 Used to monitor production-style AI system behavior.
 
-Shows:
+**Shows:**
+- Runtime health
+- Token and cost monitoring
+- Latency/error/low-confidence alerts
+- Correction-aware benchmark analytics
+- Human feedback correction loop
+- Correction analytics
+- Policy-based tool access audit
+- Raw observability JSON
 
-runtime health
-token and cost monitoring
-latency/error/low-confidence alerts
-correction-aware benchmark analytics
-human feedback correction loop
-correction analytics
-policy-based tool access audit
-raw observability JSON
-Project Overview
+---
 
+### Project Overview
 Used to explain the system clearly for GitHub, LinkedIn, and interviews.
 
-Shows:
+**Shows:**
+- System overview
+- Processed tickets
+- Success rate
+- Escalation rate
+- Average latency
+- Product capabilities
+- Core workflow
+- Technical architecture
+- Role-based experience
 
-system overview
-processed tickets
-success rate
-escalation rate
-average latency
-product capabilities
-core workflow
-technical architecture
-role-based experience
-API Overview
+## API Overview
 
 FastAPI exposes endpoints for:
 
@@ -402,26 +406,31 @@ Swagger documentation is available at:
 http://localhost:8000/docs
 ```
 
-Example Workflow
-Login as Admin.
-Submit a payment failure ticket.
-Review the AI triage result.
-Check the Operations Dashboard.
-Open the Approval Queue.
-Approve or reject the automation.
-Review policy decisions.
-Run a benchmark.
-Check Observability metrics.
-Review the Project Overview page.
-Screenshot Guide
+## Example Workflow
+
+1. Login as Admin.
+2. Submit a payment failure ticket.
+3. Review the AI triage result.
+4. Check the Operations Dashboard.
+5. Open the Approval Queue.
+6. Approve or reject the automation.
+7. Review policy decisions.
+8. Run a benchmark.
+9. Check Observability metrics.
+10. Review the Project Overview page.
+
+## Screenshot Guide
 
 Recommended screenshots for GitHub:
 
-File	Description
-01-login-workspace.png	Login page and workspace selector
-02-submit-ticket-ai-result.png	Ticket submission and AI result
-03-operations-dashboard.png	Operations dashboard with charts and table
-04-approval-queue.png	Human approval queue
-05-integrations-benchmark.png	Integration readiness and benchmark
-06-observability-evaluation.png	Observability and evaluation page
-07-project-overview.png	Project overview and architecture
+
+| File | Description |
+| :--- | :--- |
+| `01-login-workspace.png` | Login page and workspace selector |
+| `02-submit-ticket-ai-result.png` | Ticket submission and AI result |
+| `03-operations-dashboard.png` | Operations dashboard with charts and table |
+| `04-approval-queue.png` | Human approval queue |
+| `05-integrations-benchmark.png` | Integration readiness and benchmark |
+| `06-observability-evaluation.png` | Observability and evaluation page |
+| `07-project-overview.png` | Project overview and architecture |
+
