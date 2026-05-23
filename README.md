@@ -190,7 +190,7 @@ Optional external automation
 ```bash
 git clone https://github.com/YOUR_USERNAME/ClaudeOps-Flow.git
 cd ClaudeOps-Flow
----
+```
 
 ### 2. Create environment file
 
