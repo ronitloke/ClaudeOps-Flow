@@ -429,3 +429,17 @@ Recommended screenshots for GitHub:
 | `06-observability-evaluation.png` | Observability and evaluation page |
 | `07-project-overview.png` | Project overview and architecture |
 
+
+## Future Improvements
+
+- Add OAuth-based authentication
+- Add role permissions from database
+- Add Redis queue for async workflow execution
+- Add Celery/RQ background workers
+- Add email/Slack notification channels
+- Add automated test suite
+- Add production deployment guide
+- Add model comparison dashboard
+- Add prompt version management UI
+- Add feedback-driven routing improvement
+
