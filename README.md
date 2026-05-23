@@ -181,19 +181,28 @@ Optional external automation
 
 ```
 
+---
+
 ## Setup Instructions
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/YOUR_USERNAME/ClaudeOps-Flow.git
 cd ClaudeOps-Flow
+---
 
 ### 2. Create environment file
+
+```bash
 cp .env.example .env
+```
 
 On Windows PowerShell:
 
+```bash
 copy .env.example .env
+```
 
 Update .env with your local values.
 
@@ -201,7 +210,9 @@ Update .env with your local values.
 
 This is the recommended way.
 
+```bash
 docker compose up --build
+```
 
 The services should run at:
 
@@ -211,31 +222,53 @@ FastAPI Backend	http://localhost:8000
 FastAPI Swagger	http://localhost:8000/docs
 PostgreSQL	localhost:5432
 Run Locally Without Docker
+
 1. Create virtual environment
+
+```bash
 python -m venv .venv
+```
 
 Activate it:
 
 Windows PowerShell:
 
+```bash
 .\.venv\Scripts\Activate.ps1
+```
 
 macOS/Linux:
 
+```bash
 source .venv/bin/activate
+```
+
 2. Install dependencies
+3. 
+```bash
 pip install -r requirements.txt
+```
+
 3. Start FastAPI backend
+
+```bash
 uvicorn app.main:app --reload --port 8000
+```
+
 4. Start Streamlit frontend
 
 Open another terminal:
 
+```bash
 streamlit run streamlit_app.py
+```
 
 Then open:
 
+```bash
 http://localhost:8501
+```
+
 Demo Login
 
 The demo login credentials are configured through .env.
@@ -342,6 +375,7 @@ API Overview
 
 FastAPI exposes endpoints for:
 
+```bash
 POST /triage/ticket
 GET  /config
 GET  /contracts/outbound-automation/v1
@@ -353,10 +387,14 @@ GET  /observability/summary
 GET  /benchmark/correction-aware-summary
 GET  /policy/audit/recent
 POST /triage/logs/{request_id}/feedback
+```
 
 Swagger documentation is available at:
 
+```bash
 http://localhost:8000/docs
+```
+
 Example Workflow
 Login as Admin.
 Submit a payment failure ticket.
