@@ -178,3 +178,200 @@ Optional external automation
  ├── Make
  ├── Slack
  └── Generic webhooks
+
+Setup Instructions
+1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/ClaudeOps-Flow.git
+cd ClaudeOps-Flow
+2. Create environment file
+cp .env.example .env
+
+On Windows PowerShell:
+
+copy .env.example .env
+
+Update .env with your local values.
+
+Run with Docker
+
+This is the recommended way.
+
+docker compose up --build
+
+The services should run at:
+
+Service	URL
+Streamlit Frontend	http://localhost:8501
+FastAPI Backend	http://localhost:8000
+FastAPI Swagger	http://localhost:8000/docs
+PostgreSQL	localhost:5432
+Run Locally Without Docker
+1. Create virtual environment
+python -m venv .venv
+
+Activate it:
+
+Windows PowerShell:
+
+.\.venv\Scripts\Activate.ps1
+
+macOS/Linux:
+
+source .venv/bin/activate
+2. Install dependencies
+pip install -r requirements.txt
+3. Start FastAPI backend
+uvicorn app.main:app --reload --port 8000
+4. Start Streamlit frontend
+
+Open another terminal:
+
+streamlit run streamlit_app.py
+
+Then open:
+
+http://localhost:8501
+Demo Login
+
+The demo login credentials are configured through .env.
+
+Default example:
+
+Role	Username	Password
+Admin	admin	admin123
+Ops Analyst	analyst	analyst123
+Main Application Pages
+Submit Ticket
+
+Used to submit a support ticket and run the AI triage workflow.
+
+Shows:
+
+predicted queue
+priority
+intent
+confidence
+SLA risk
+latency
+retry count
+escalation decision
+automation approval status
+draft response
+structured JSON output
+Operations Dashboard
+
+Used to monitor stored triage logs.
+
+Shows:
+
+total tickets
+success rate
+SLA-risk rate
+escalation rate
+average confidence
+average latency
+retry rate
+top queue
+distribution charts
+latency trend
+recent triage records
+detailed request review
+Approval Queue
+
+Used to review critical automation plans before external actions are executed.
+
+Shows:
+
+subject
+summary
+priority
+queue
+target team
+SLA risk
+human review flag
+approval reason
+approve/reject buttons
+Integrations & Benchmark
+
+Used to review automation readiness and benchmark the AI workflow.
+
+Shows:
+
+Zapier hook status
+Make hook status
+outbound workflow contract
+benchmark runner
+benchmark summary
+benchmark charts
+benchmark history
+Observability & Evaluation
+
+Used to monitor production-style AI system behavior.
+
+Shows:
+
+runtime health
+token and cost monitoring
+latency/error/low-confidence alerts
+correction-aware benchmark analytics
+human feedback correction loop
+correction analytics
+policy-based tool access audit
+raw observability JSON
+Project Overview
+
+Used to explain the system clearly for GitHub, LinkedIn, and interviews.
+
+Shows:
+
+system overview
+processed tickets
+success rate
+escalation rate
+average latency
+product capabilities
+core workflow
+technical architecture
+role-based experience
+API Overview
+
+FastAPI exposes endpoints for:
+
+POST /triage/ticket
+GET  /config
+GET  /contracts/outbound-automation/v1
+GET  /approvals/pending
+POST /approvals/{request_id}/approve
+POST /approvals/{request_id}/reject
+POST /benchmark/run
+GET  /observability/summary
+GET  /benchmark/correction-aware-summary
+GET  /policy/audit/recent
+POST /triage/logs/{request_id}/feedback
+
+Swagger documentation is available at:
+
+http://localhost:8000/docs
+Example Workflow
+Login as Admin.
+Submit a payment failure ticket.
+Review the AI triage result.
+Check the Operations Dashboard.
+Open the Approval Queue.
+Approve or reject the automation.
+Review policy decisions.
+Run a benchmark.
+Check Observability metrics.
+Review the Project Overview page.
+Screenshot Guide
+
+Recommended screenshots for GitHub:
+
+File	Description
+01-login-workspace.png	Login page and workspace selector
+02-submit-ticket-ai-result.png	Ticket submission and AI result
+03-operations-dashboard.png	Operations dashboard with charts and table
+04-approval-queue.png	Human approval queue
+05-integrations-benchmark.png	Integration readiness and benchmark
+06-observability-evaluation.png	Observability and evaluation page
+07-project-overview.png	Project overview and architecture
