@@ -216,11 +216,14 @@ docker compose up --build
 
 The services should run at:
 
-**Service** — **URL**
-**Streamlit Frontend** — http://localhost:8501
-**FastAPI Backend** — http://localhost:8000
-**FastAPI Swagger** — http://localhost:8000/docs
-**PostgreSQL** — localhost:5432
+
+| Service | URL |
+| :--- | :--- |
+| Streamlit Frontend | http://localhost:8501 |
+| FastAPI Backend | http://localhost:8000 |
+| FastAPI Swagger | http://localhost:8000/docs |
+| PostgreSQL | localhost:5432 |
+
 
 
 1. Create virtual environment
