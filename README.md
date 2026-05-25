@@ -181,6 +181,134 @@ Optional external automation
 
 ```
 
+## Project Structure
+
+```text
+ClaudeOps-Flow/
+│
+├── app/
+│   ├── core/
+│   │   ├── __init__.py
+│   │   └── settings.py
+│   │
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── loaders.py
+│   │   └── normalize.py
+│   │
+│   ├── db/
+│   │   ├── __init__.py
+│   │   ├── database.py
+│   │   └── schema_guard.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── benchmark_run.py
+│   │   ├── outbound_action_audit.py
+│   │   └── triage_log.py
+│   │
+│   ├── repositories/
+│   │   ├── __init__.py
+│   │   ├── approval_repository.py
+│   │   ├── benchmark_repository.py
+│   │   ├── dashboard_repository.py
+│   │   ├── policy_audit_repository.py
+│   │   └── triage_log_repository.py
+│   │
+│   ├── schemas/
+│   │   ├── __init__.py
+│   │   ├── approval.py
+│   │   ├── benchmark.py
+│   │   └── triage.py
+│   │
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── approval_service.py
+│   │   ├── automation_contract.py
+│   │   ├── automation_dispatcher.py
+│   │   ├── automation_rules.py
+│   │   ├── automation_service.py
+│   │   ├── benchmark_accuracy_service.py
+│   │   ├── benchmark_service.py
+│   │   ├── claude_client.py
+│   │   ├── deterministic_router.py
+│   │   ├── gemini_client.py
+│   │   ├── groq_client.py
+│   │   ├── label_catalog.py
+│   │   ├── llm_base.py
+│   │   ├── llm_factory.py
+│   │   ├── observability_service.py
+│   │   ├── policy_engine.py
+│   │   ├── prompt_builder.py
+│   │   ├── queue_mapping.py
+│   │   └── triage_service.py
+│   │
+│   ├── __init__.py
+│   └── main.py
+│
+data/
+├── processed/
+│   ├── dataset_summary.json
+│   ├── responses_unified.csv
+│   └── tickets_unified.csv
+├── raw/
+│   ├── Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv
+│   ├── dataset-tickets-multi-lang-4-20k.csv
+│   └── dataset-tickets-multi-lang3-4k.csv
+└── .gitkeep
+
+│
+├── docs/
+│   ├── Screenshots/
+│   │   ├── Backend/
+│   │   │   ├── 01_backend_swagger_api_overview.png
+│   │   │   ├── 02_backend_triage_ticket_success.png
+│   │   │   ├── 03_backend_benchmark_run.png
+│   │   │   ├── 04_backend_observability_summary.png
+│   │   │   ├── 05_backend_correction_aware_summary.png
+│   │   │   ├── 06_backend_outbound_automation_contract.png
+│   │   │   ├── 07_backend_triage_log_detail.png
+│   │   │   ├── 08_backend_pending_approvals.png
+│   │   │   ├── 09_backend_approval_request.png
+│   │   │   └── 10_backend_reject_approval.png
+│   │   │
+│   │   └── Frontend/
+│   │       ├── 1. Login Page.png
+│   │       ├── 2. Submit Ticket.png
+│   │       ├── 3. Operations Dashboard.png
+│   │       ├── 4. Approval Queue.png
+│   │       ├── 5. Integrations & Benchmark.png
+│   │       ├── 6. Observability.png
+│   │       └── 7. Project Overview.png
+│   │
+│   ├── architecture.md
+│   └── demo_flow.md
+│
+├── scripts/
+│   ├── apply_current_schema_fix.py
+│   ├── __init__.py
+│   ├── migrations_final_schema.sql
+│   ├── module6_migration.sql
+│   ├── module9_migration.sql
+│   ├── module11_zapier_make_benchmark_migration.sql
+│   ├── module12_feature_pack.sql
+│   ├── module13_approval_queue_migration.sql
+│   ├── module14_observability_migration.sql
+│   ├── module16_policy_engine_migration.sql
+│   ├── module17_feedback_correction_loop.sql
+│   ├── module19b_indexes_pagination.sql
+│   └── prepare_data.py
+│
+├── .env.example
+├── .gitignore
+├── Dockerfile.api
+├── Dockerfile.streamlit
+├── LICENSE
+├── README.md
+├── docker-compose.yml
+├── requirements.txt
+└── streamlit_app.py
+
 ---
 
 ## Setup Instructions
