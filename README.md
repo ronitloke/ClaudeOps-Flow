@@ -188,7 +188,7 @@ Optional external automation
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ClaudeOps-Flow.git
+git clone https://github.com/ronitloke/ClaudeOps-Flow.git
 cd ClaudeOps-Flow
 ```
 
@@ -218,7 +218,7 @@ The services should run at:
 
 
 | Service | URL |
-| :--- | :--- |
+|---|---|
 | Streamlit Frontend | http://localhost:8501 |
 | FastAPI Backend | http://localhost:8000 |
 | FastAPI Swagger | http://localhost:8000/docs |
@@ -280,7 +280,7 @@ Default example:
 
 
 | Role | Username | Password |
-| :--- | :--- | :--- |
+|---|---|---|
 | Admin | admin | admin123 |
 | Ops Analyst | analyst | analyst123 |
 
@@ -420,14 +420,14 @@ Recommended screenshots for GitHub:
 
 
 | File | Description |
-| :--- | :--- |
-| `01-login-workspace.png` | Login page and workspace selector |
-| `02-submit-ticket-ai-result.png` | Ticket submission and AI result |
-| `03-operations-dashboard.png` | Operations dashboard with charts and table |
-| `04-approval-queue.png` | Human approval queue |
-| `05-integrations-benchmark.png` | Integration readiness and benchmark |
-| `06-observability-evaluation.png` | Observability and evaluation page |
-| `07-project-overview.png` | Project overview and architecture |
+|---|---|
+| `1. Login Page.png` | Login page and workspace selector |
+| `2. Submit Ticket.png` | Ticket submission and AI result |
+| `3. Operations Dashboard.png` | Operations dashboard with charts and table |
+| `4. Approval Queue.png` | Human approval queue |
+| `5. Integrations & Benchmark.png` | Integration readiness and benchmark |
+| `6. Observability.png` | Observability and evaluation page |
+| `7. Project Overview.png` | Project overview and architecture |
 
 
 ## Future Improvements
