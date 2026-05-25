@@ -1,0 +1,26 @@
+{
+  "ticket_rows": 24000,
+  "response_rows": 26872,
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "pt"
+  ],
+  "queues": 10,
+  "priorities": [
+    "high",
+    "low",
+    "medium"
+  ],
+  "types": [
+    "Change",
+    "Incident",
+    "Problem",
+    "Request"
+  ],
+  "business_types": 9,
+  "intents": 27,
+  "categories": 11
+}
