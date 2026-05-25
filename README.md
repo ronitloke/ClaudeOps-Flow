@@ -181,6 +181,8 @@ Optional external automation
 
 ```
 
+---
+
 ## Project Structure
 
 ```text
