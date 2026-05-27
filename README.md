@@ -297,6 +297,7 @@ data/
 │   │   |    ├── 5. Integrations & Benchmark.png
 │   │   |    ├── 6. Observability.png
 │   │   |    └── 7. Project Overview.png
+|   |   |
 │   │   └── Integrations/
 |   |        ├── 01_zapier_workflow_overview.png
 |   |        ├── 02_make_router_scenario.png
