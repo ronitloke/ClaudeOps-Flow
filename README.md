@@ -37,6 +37,21 @@ ClaudeOps Flow takes a support ticket and performs an end-to-end AI operations w
 
 ---
 
+## External Automation & Integration Proof
+
+ClaudeOps Flow prepares approved escalation payloads for downstream automation tools.  
+The screenshots below show the same escalation workflow being delivered into external tools such as Zapier, Make, Slack, Gmail, Google Sheets, and Trello.
+
+| Integration | What it demonstrates | Screenshot |
+|---|---|---|
+| Zapier Workflow | Webhook-triggered automation flow connecting Gmail, Google Sheets, and Trello. | <img src="docs/Screenshots/Integrations/01_zapier_workflow_overview.png" width="420"/> |
+| Make Scenario | Webhook-based routing scenario with conditional automation paths. | <img src="docs/Screenshots/Integrations/02_make_router_scenario.png" width="420"/> |
+| Slack Notification | Approved escalation payload delivered as an operational alert. | <img src="docs/Screenshots/Integrations/03_slack_escalation_notification.png" width="420"/> |
+| Gmail Escalation Email | Approved ticket converted into an escalation email with ticket context. | <img src="docs/Screenshots/Integrations/04_gmail_escalation_email.png" width="420"/> |
+| Google Sheets Logging | Escalated ticket data stored as structured rows for tracking and reporting. | <img src="docs/Screenshots/Integrations/05_google_sheets_live_escalations.png" width="420"/> |
+| Trello Escalation Board | Escalated tickets converted into actionable Trello cards. | <img src="docs/Screenshots/Integrations/06_trello_escalated_tickets_board.png" width="420"/> |
+
+---
 ## Key Features
 
 ### AI Ticket Triage
