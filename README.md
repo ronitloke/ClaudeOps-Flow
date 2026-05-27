@@ -289,15 +289,22 @@ data/
 │   │   │   ├── 09_backend_approval_request.png
 │   │   │   └── 10_backend_reject_approval.png
 │   │   │
-│   │   └── Frontend/
-│   │       ├── 1. Login Page.png
-│   │       ├── 2. Submit Ticket.png
-│   │       ├── 3. Operations Dashboard.png
-│   │       ├── 4. Approval Queue.png
-│   │       ├── 5. Integrations & Benchmark.png
-│   │       ├── 6. Observability.png
-│   │       └── 7. Project Overview.png
-│   │
+│   │   |── Frontend/
+│   │   |    ├── 1. Login Page.png
+│   │   |    ├── 2. Submit Ticket.png
+│   │   |    ├── 3. Operations Dashboard.png
+│   │   |    ├── 4. Approval Queue.png
+│   │   |    ├── 5. Integrations & Benchmark.png
+│   │   |    ├── 6. Observability.png
+│   │   |    └── 7. Project Overview.png
+│   │   └── Integrations/
+|   |        ├── 01_zapier_workflow_overview.png
+|   |        ├── 02_make_router_scenario.png
+|   |        ├── 03_slack_escalation_notification.png
+|   |        ├── 04_gmail_escalation_email.png
+|   |        ├── 05_google_sheets_live_escalations.png
+|   |        └── 06_trello_escalated_tickets_board.png
+|   |
 │   ├── architecture.md
 │   └── demo_flow.md
 │
